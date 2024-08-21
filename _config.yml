@@ -27,7 +27,7 @@ url: https://crodevs.github.io # the base hostname & protocol for your site, e.g
 github_username:  crodevs
 
 # Build settings
-theme: tactile
+theme: jekyll-theme-tactile
 plugins:
   - jekyll-feed
 
