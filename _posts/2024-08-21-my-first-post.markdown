@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "A jekyll retrospective"
+title:  "A New Retrospective"
 date:   2024-08-21 14:34:23 -0500
-categories: jekyll update
+categories: blog
 ---
-| ![blinkenlights](/assets/img/xkcd_lights.png) |
-| :--: |
-| *https://xkcd.com/722/* |
+{% include image.html url="/assets/img/xkcd_lights.png" description="Blinkenlights https://xkcd.com/722/" %}
 This is my first jekyll page on my first jekyll blog.
