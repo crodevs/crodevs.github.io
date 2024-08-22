@@ -22,7 +22,7 @@ title: CroDev's blog
 email: carson.rohan@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Bits from a software developer's brain
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://crodevs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  crodevs
 
