@@ -9,12 +9,18 @@ source "https://rubygems.org"
 # Happy Jekylling!
 #gem "jekyll", "~> 4.3.3"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "tactile"
+gem "minima"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", "~> 232", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-remote-theme'
+  gem 'jekyll-tagging-related_posts'
+  gem 'jekyll-postfiles'
+  gem 'jekyll-og-image'
   gem "jekyll-feed", "~> 0.12"
 end
 

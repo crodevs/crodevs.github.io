@@ -27,9 +27,15 @@ github_username:  crodevs
 email: carson.rohan@gmail.com
 
 # Build settings
-theme: jekyll-theme-tactile
+remote_theme: jekyll/tactile
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-tagging-related_posts
+  - jekyll-postfiles
+  - jekyll-og-image
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
