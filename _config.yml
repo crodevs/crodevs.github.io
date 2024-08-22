@@ -7,7 +7,7 @@ github_username:  crodevs
 email: carson.rohan@gmail.com
 
 # Build settings
-theme: jekyll/minima
+remote_theme: jekyll/minima
 
 minima:
   skin: dark
