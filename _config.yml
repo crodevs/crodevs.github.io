@@ -7,15 +7,15 @@ github_username:  crodevs
 email: carson.rohan@gmail.com
 
 # Build settings
-theme: minima
+theme: jekyll/minima
 
 minima:
   skin: dark
 
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-tagging-related_posts
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
 defaults:
   -
