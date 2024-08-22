@@ -7,7 +7,11 @@ github_username:  crodevs
 email: carson.rohan@gmail.com
 
 # Build settings
-theme: jekyll-theme-tactile
+theme: minima
+
+minima:
+  skin: dark
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -17,5 +21,12 @@ defaults:
   -
     scope:
       path: ""
+      type: "posts"
     values:
-      layout: "default"
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
