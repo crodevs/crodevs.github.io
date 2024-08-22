@@ -27,7 +27,7 @@ github_username:  crodevs
 email: carson.rohan@gmail.com
 
 # Build settings
-theme: jekyll-theme-hacker
+theme: minimal
 plugins:
   - jekyll-feed
 
