@@ -1,0 +1,11 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    container_name: jekyll-blog
+    restart: always
+    ports:
+      - "4000:4000"
+    volumes:
+      - ${PWD}:/srv/jekyll
+    command: sh -c "bundle install && jekyll serve --livereload --host 0.0.0.0 --port 4000 --watch"
+    working_dir: /srv/jekyll
