@@ -1,0 +1,27 @@
+#!/bin/env sh
+
+current_date=$(date +"%Y-%m-%d")
+
+read -p "Enter the title for the post: " post_title
+formatted_title=$(echo "$post_title" | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
+
+filename="${current_date}-${formatted_title}.md"
+
+post_dir="_posts"
+
+mkdir -p "$post_dir"
+
+cat <<EOL > "$post_dir/$filename"
+---
+layout: post
+title: "$post_title"
+date: $(date +"%Y-%m-%d %H:%M:%S %z")
+categories: []
+tags: []
+---
+
+# $post_title
+
+EOL
+
+echo "New post created: $post_dir/$filename"
