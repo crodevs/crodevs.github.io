@@ -17,7 +17,7 @@ layout: base
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
-      <span id="last-modified"></span>
+      <br><span id="last-modified"></span>
       {%- if page.author -%}
         • {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">

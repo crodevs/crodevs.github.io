@@ -1,15 +1,17 @@
-title: CroDev Bits
+title: Crodev's Bits
 baseurl: "" 
 url: "https://crodevs.github.io" 
 port: 4000
 description: >- 
-  Bits from a software developer's brain
+  bits from a software developer's brain
 github_username:  crodevs
+repository: crodevs/crodevs.github.io
 email: carson.rohan@gmail.com
 include: [_pages]
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 remote_theme: jekyll/minima
 
@@ -20,6 +22,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-github-metadata
 
 defaults:
   -
@@ -29,6 +32,7 @@ defaults:
     values:
       is_post: true
       layout: "post"
+      permalink: /blog/:title
   -
     scope:
       path: "_pages"
