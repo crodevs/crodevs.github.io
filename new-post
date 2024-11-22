@@ -13,7 +13,6 @@ mkdir -p "$post_dir"
 
 cat <<EOL > "$post_dir/$filename"
 ---
-layout: post
 title: "$post_title"
 date: $(date +"%Y-%m-%d %H:%M:%S %z")
 categories: []
