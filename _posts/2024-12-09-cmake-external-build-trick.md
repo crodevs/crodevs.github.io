@@ -1,15 +1,16 @@
 ---
-title: "cmake external build trick"
+title: "Cmake "External" Build Trick"
 date: 2024-12-09 15:24:27 -0600
 categories: []
 tags: [cmake]
 ---
 
-# CMake "External" Build Trick
+{% include image.html url="/assets/img/cmake-patrick.jpg" description="" %}
+
 I recently found myself in this CMake predicament...
 
 I have project Foo. Foo depends on project Bar. Bar is CMake packaged as `barConfig.cmake` consumed via `find_package(bar CONFIG REQUIRED)` like so:
-```shell
+```c
 find_package(bar CONFIG REQUIRED)
 # ...
 target_link_libraries(foo PRIVATE namespace::bar)
@@ -22,7 +23,7 @@ Now say I actually own both project Foo and Bar and simply want to use submoduli
 
 Luckily, there is a solution. CMake provides a library called `ExternalProject` that can configure a dependency to be built at *build time* but allows package symbol usage at *configure time*. Normally, this would be used for its namesake, external dependencies, but here, it allows a local CMake project to be configured as a dependency. Here is an example:
 
-```shell
+```c
 project(foo)
 
 include(ExternalProject)
