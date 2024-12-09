@@ -29,11 +29,10 @@ Luckily, there is a solution. CMake provides a library called `ExternalProject` 
 project(foo)
 
 include(ExternalProject)
-ExternalProject_Add(
-	bar
+ExternalProject_Add(bar
 	SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/local/path/to/bar
     CMAKE_ARGS 
-        -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} # install dependencies in foo install dir (could be build dir as well)
+        -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} # you can install bar in any CMAKE_PREFIX_PATH path
 )
 find_package(bar REQUIRED CONFIG)
 # ...
