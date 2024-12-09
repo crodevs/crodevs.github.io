@@ -19,8 +19,6 @@ categories: []
 tags: []
 ---
 
-# $post_title
-
 EOL
 
 echo "New post created: $post_dir/$filename"
