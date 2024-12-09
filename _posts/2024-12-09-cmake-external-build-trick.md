@@ -1,5 +1,5 @@
 ---
-title: "Cmake "External" Build Trick"
+title: "Cmake \"External\" Build Trick"
 date: 2024-12-09 15:24:27 -0600
 categories: []
 tags: [cmake]
